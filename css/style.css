@@ -1,0 +1,89 @@
+body {
+    background-image: url("../images/background.png");
+    font-family: 'Amatic SC', cursive;
+    
+}
+
+.rule {
+    height: 2px;
+    border: none;
+    background-color: #333333a1;
+}
+
+.round-img {
+    border-radius: 50%
+}
+
+.title-super {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.title-logo {
+    margin-top: 20px
+}
+
+
+.icon img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    color: black;
+    }
+
+.caption {
+    color: #333333;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.home-logo {
+    color: #333333;
+    font-size: 25px;
+    font-weight: 800;
+    position: absolute;
+    left: 13%;
+    bottom: 2%;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 120px;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.border {
+    border: solid #333333;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.example {
+    font-size: 23px;
+    font-weight: 1000;
+    margin-top: 10px;
+    width: 400px;
+    margin-left: 77px;
+}
+
+
+.flexbox {
+    display: inline-flex;
+    column-gap: 40px;
+}
