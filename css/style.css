@@ -1,7 +1,6 @@
 body {
     background-image: url("../images/background.png");
-    font-family: 'Amatic SC', cursive;
-    
+    font-family: 'Dosis', sans-serif;
 }
 
 .rule {
@@ -24,12 +23,12 @@ body {
 
 .title-super {
     font-size: 80px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .subtitle {
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .title-logo {
@@ -53,27 +52,29 @@ body {
 .home-logo {
     color: #333333;
     font-size: 25px;
-    font-weight: 800;
+    font-weight: 300;
     position: absolute;
-    left: 75px;
+    left: 62px;
     bottom: 5px;
 }
 
 h2 {
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 120px;
 }
 
 h3 {
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 170px;
 }
 
 p {
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 200;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .border {
@@ -110,9 +111,9 @@ p {
 }
 
 ul {
-    font-size: 30px;
+    font-size: 25px;
     margin: 30px;
-    font-weight: 600;
+    font-weight: 200;
     list-style-position: inside;
     text-indent: 20%
     ;
@@ -126,11 +127,11 @@ ul {
 
 #fixed-logo {
     color: #333333;
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 800;
     position: absolute;
-    left: 35px;
-    top: 90px;
+    left: 32px;
+    top: 94px;
 }
 
 .move-up {
@@ -146,8 +147,8 @@ ul {
 }
 
 .back-to-top {
-    font-size: 28px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 300;
     margin-top: 70px;
     color: #333333a1
 }
@@ -157,7 +158,11 @@ a {
 }
 
 .page-button {
-    font-size: 28px;
-    font-weight: 800;
+    font-size: 22px;
+    font-weight: 300;
     color: #333333a1
+}
+
+.next-question {
+    margin-top: 80px;
 }
