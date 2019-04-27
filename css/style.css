@@ -10,6 +10,13 @@ body {
     background-color: #333333a1;
 }
 
+.bottom-rule {
+    height: 2px;
+    border; none;
+    background-color: #333333a1;
+    margin-top: 100px;
+}
+
 .round-img {
     border-radius: 50%
 }
@@ -47,8 +54,8 @@ body {
     font-size: 25px;
     font-weight: 800;
     position: absolute;
-    left: 13%;
-    bottom: 2%;
+    left: 75px;
+    bottom: 5px;
 }
 
 h2 {
@@ -60,7 +67,7 @@ h2 {
 h3 {
     font-size: 35px;
     font-weight: 600;
-    line-height: 70px;
+    line-height: 170px;
 }
 
 p {
@@ -82,8 +89,70 @@ p {
     margin-left: 77px;
 }
 
+.code-font {
+    color: #333333;
+    background-color: #b3acac69;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 70%;
+    font-weight: 300;
+}
 
-.flexbox {
-    display: inline-flex;
-    column-gap: 40px;
+#space-image {
+    margin-bottom: 70px;
+}
+
+.code-screenshot {
+    border: solid #333333;
+    padding: 5px;
+    margin: 40px;
+}
+
+ul {
+    font-size: 30px;
+    font-weight: 600;
+    list-style-position: inside;
+}
+
+#fixed-cat {
+    position: fixed;
+    bottom: 20px;
+    right: 35px;
+}
+
+#fixed-logo {
+    color: #333333;
+    font-size: 22px;
+    font-weight: 800;
+    position: absolute;
+    left: 35px;
+    top: 90px;
+}
+
+.move-up {
+    border: solid #333333;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+#about-me {
+    margin-bottom:  50px;
+}
+
+.back-to-top {
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 70px;
+    color: #333333a1
+}
+
+a {
+    color: #333333
+}
+
+.page-button {
+    font-size: 28px;
+    font-weight: 800;
+    color: #333333a1
 }

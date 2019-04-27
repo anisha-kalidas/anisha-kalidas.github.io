@@ -10,6 +10,7 @@
     </head>
 
     <body>
+        <a name="top"></a>
         <div class="container">
 
             <div class="row">
@@ -31,13 +32,19 @@
                 <hr class="rule">
             </div>
 
+            <div class="row text-right">
+                <button class="page-button">
+                    <a href="sprint2-core.html">SKIP TO SPRINT TWO CORE BLOG</a>
+                </button>
+            </div>
+
             <div class="row text-center">
                 <h2>Technical Blog</h2>
                 <h3>
                     <u>What are the differences between relative, absolute, and fixed positioning?</u>
                 </h3>
                 <p>
-                    In this post we talk about three different types of CSS positioning: relative, absolute and fixed positioning. Before we begin, let's discuss the four CSS properties that are unlocked by the position property: <u>top, bottom, left</u> and <u>right</u>.
+                    In this post we talk about three different types of CSS positioning: relative, absolute and fixed positioning. Before we begin, let's discuss the four "helper" properties that are unlocked by the position property: <u>top, bottom, left</u> and <u>right</u>.
                 </p>
             </div>
 
@@ -45,13 +52,13 @@
                 <div class="col-md-6 text-center">
                     <figure>
                         <img class="border" src="../images/position-top.png" width="400" height="200" alt="top position"/>
-                        <figcaption class="text-center example">With the top property, we are able to push our element down from the top.</figcaption>
+                        <figcaption class="text-center example">With the <u>top</u> property, we are able to push our element down from the top.</figcaption>
                     </figure>
                 </div>
                 <div class="col-md-6 text-center">
                     <figure>
                         <img class="border" src="../images/position-bottom.png" width="400" height="200" alt="bottom position"/>
-                        <figcaption class="text-center example">With the bottom property, we are able to push our element up from the bottom.</figcaption>
+                        <figcaption class="text-center example">With the <u>bottom</u> property, we are able to push our element up from the bottom.</figcaption>
                     </figure>
             </div>
 
@@ -59,25 +66,122 @@
                 <div class="col-md-6 text-center">
                     <figure >
                         <img class="border" src="../images/position-left.png" width="400" height="200" alt="left position"/>
-                        <figcaption class="text-center example">With the left property, we are able to push our element to the right from the left.</figcaption>
+                        <figcaption class="text-center example">With the <u>left</u> property, we are able to push our element to the right from the left.</figcaption>
                     </figure>
                 </div>
                 <div class="col-md-6 text-center">
                     <figure>
                         <img class="border" src="../images/position-right.png" width="400" height="200" alt="right position"/>
-                        <figcaption class="text-center example">With the right property, we are able to push our element to the left from the right</figcaption>
+                        <figcaption id="space-image" class="text-center example">With the <u>right</u> property, we are able to push our element to the left from the right</figcaption>
                     </figure>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row text-center">
                 <p>
-                    
+                    Now let's learn about the difference between <u><a href=#relative>relative</a>, <a href=#absolute>absolute</a></u> and <u><a href=#fixed>fixed</a></u> positioning...
+                </p>
+                <a name="relative"></a>
+                <h3><u>1. Relative</u></h3>
+                <p>
+                    An element with <code class="code-font">position: relative;</code> is positioned relative to <i>it's normal position.</i>  This means that if we just give an element <code class=code-font>position:relative</code> it will initially seem to do nothing. In order to see it move, we also need to tell it where to go using the helper properties.
+                </p>
+                <p>
+                    In this example below, you will see how the relatively positioned element moves when its attributes are changed. The element moves to the right and down from its original position.
                 </p>
             </div>
 
+            <div class="row text-center">
+                <p>Let's begin with the HTML code:</p>
+                <img class="code-screenshot" src="../images/code-html.png" width=600 alt="html code"/>
+                <p>
+                    Next comes the CSS code. Note the blue box has a position of 'static'.  The static position is the default position and elements will fall into this position whether static is declared or not
+                    .</p>
+                <img class="code-screenshot" src="../images/code-static.png" width=600 margin-bottom=10px alt="static position code"/>
+                <img class="code-screenshot" src="../images/diagram-static.png" width=400 alt="static position diagram"/>
+                <p>
+                    From the example above we can see that the blue box is positioned underneath the orange box by default.  Now let's move the orange box next to the blue one.
+                </p>
+                <img class="code-screenshot" src="../images/code-relative.png" width=600 margin-bottom=10px alt="relative position code"/>
+                <img class="code-screenshot" src="../images/diagram-relative.png" width=400 alt="relative position diagram"/>
+                <p>
+                    Here we can see the orange box has moved 100 pixels to the right and down from it's original position.  Note that declaring the position of an element as relative does not affect the position of other elements.
+                </p>
+            </div>
+
+            <div class="row text-center">
+                <a name="absolute"></a>
+                <h3><u>2. Absolute</u></h3>
+                <p>
+                    An element with <code class="code-font">position: absolute;</code> is positioned relative to <i>it's parent element.</i>  This allows us to position our element precisely where we want it.  An element with <code class="code-font">position: absolute;</code> is removed from the normal document flow. It is positioned automatically to the starting point (top-left corner) of its parent element. If it doesn’t have any parent elements, then the initial HTML document will be its parent.
+                </p>
+                <p>
+                    Let's add a container as the parent element:
+                </p>
+                <img class="code-screenshot" src="../images/html-absolute.png" width=600 alt="absolute position html"/>
+                <p>
+                    Now let's change the position of the orange box to absolute:
+                </p>
+                <img class="code-screenshot" src="../images/code-absolute.png" width=600 margin-bottom=10px alt="absolute position css"/>
+                <img class="code-screenshot" src="../images/diagram-absolute.png" width=400 alt="absolute position diagram"/>
+                <p>
+                    Now it looks like the blue box has disappeared, but it hasn’t. The blue box behaves like the orange box is removed, so it shifts up to the orange box’s place.  Now let’s move the orange box five pixels down and 5 pixels to the right:
+                </p>
+                <img class="code-screenshot" src="../images/code-absolute2.png" width=600 margin-bottom=10px alt="moving orange box down and to the right"/>
+                <img class="code-screenshot" src="../images/diagram-absolute2.png" width=400 alt="diagram of moved orange box"/>
+                <p>
+                    The coordinates of an absolute positioned element are relative to its parent if the parent also has a non-static position. Otherwise, helper properties position the element relative to the initial HTML, which is what we have seen in the example above.  Now let's set the position of the container to relative:
+                </p>
+                <img class="code-screenshot" src="../images/code-absolute3.png" width=600 margin-bottom=10px alt="code for making container position relative"/>
+                <img class="code-screenshot" src="../images/diagram-absolute3.png" width=400 alt="diagram of orange box in relative positioned container"/>
+                <p>
+                    Here we move the orange box five pixels <i>to the left</i> from the right-most edge of the container.
+                </p>
+            </div>
+
+            <div class="row text-center">
+                <a name="fixed"></a>
+                <h3><u>3. Fixed</u></h3>
+                <p class="text-center">
+                    An element with <code class="code-font">position: fixed;</code> is positioned relative only <i>to the viewport.</i>  Like an absolutely positioned element, fixed position elements are also removed from the normal document flow.  The differences are:
+                </p>
+                    <ul id="bullet">
+                        <li>They are only relative to the HTML document, not to any other parents.</li>
+                        <li>They are not affected by scrolling.</li>
+                    </ul>
+                <p class="text-center">
+                    I'm sure you will have noticed the small cat icon in the bottom right corner of your screen by now.  This element has a fixed position and hence we cannot scroll away from it.  See the HTML and CSS code for this below.
+                </p>
+            </div>
+
+            <div class="row" id="fixed-cat">
+                <figure class=icon>
+                    <img class="round-img title-logo" src="../images/logo.png" width="100" height="100" alt="cat logo">
+                    <figcaption id="fixed-logo">FIXED</figcaption>
+                </figure>    
+            </div>
+
+            <div class="row text-center">
+                <img class="code-screenshot" src="../images/fixed-html.png" width=1100 alt="html code for fixed positioned element"/>
+                <img class="move-up" src="../images/fixed-css.png" width=280 alt="css code for fixed position element"/>
+            </div>
+
+            <div class="row text-center">
+                <p>
+                    I hope this post has clarified the differences between relative, absolute and fixed positioning.
+                </p>    
+                <p>Try these concepts yourself to solidify your learning!
+                </p>
+            </div>
+
+            <div class="row text-center back-to-top">
+                <button>
+                    <a href="#top">BACK TO TOP</a>
+                </button>
+            </div>
+
             <div class="row">
-                    <hr class="rule">
+                    <hr class="bottom-rule">
             </div>
     
             <div class="row text-center">
@@ -124,6 +228,7 @@
             </div>
         </div>
     
+
     </body>
         
       
