@@ -14,7 +14,8 @@ body {
     height: 2px;
     border; none;
     background-color: #333333a1;
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 60px;
 }
 
 .round-img {
@@ -110,8 +111,11 @@ p {
 
 ul {
     font-size: 30px;
+    margin: 30px;
     font-weight: 600;
     list-style-position: inside;
+    text-indent: 20%
+    ;
 }
 
 #fixed-cat {
@@ -137,7 +141,8 @@ ul {
 }
 
 #about-me {
-    margin-bottom:  50px;
+    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .back-to-top {
