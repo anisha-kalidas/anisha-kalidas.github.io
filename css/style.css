@@ -94,11 +94,13 @@ p {
 
 .code-font {
     color: #333333;
-    background-color: #b3acac69;
-    padding-left: 4px;
-    padding-right: 4px;
-    font-size: 85%;
+    background-color: #e4dfdf80;
+    padding: 3px;
+    font-size: 80%;
     font-weight: 300;
+    border: solid #333333;
+    border-width: thin;
+    border-radius: 3px;
 }
 
 #space-image {
@@ -189,4 +191,12 @@ li {
 #properties {
     margin-left: 400px;
     list-style-type: none;
+}
+
+button {
+    border-radius: 3px;
+    background-color: #e4dfdf80;
+    border: solid #333333;
+    border-width: thin; 
+    padding: 10px;
 }
