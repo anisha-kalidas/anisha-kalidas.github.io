@@ -5,13 +5,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Anisha's Blog - Sprint 3 Tech</title>
+        <title>Anisha's Blog | Sprint 3 Tech</title>
         <link rel="stylesheet" href="../css/bootstrap.css">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
     </head>
 
     <body>
+        <a name="top"></a>
         <div class="container">
 
             <div class="row">
@@ -23,6 +24,7 @@
                         </figure>
                     </a>
                 </div>
+            
                 <div class="col-md-6 text-right text-uppercase">
                     <h1 class="title-super">Anisha Dhana</h1>
                     <h4 class="subtitle">Sprint Three</h4>
@@ -33,9 +35,115 @@
                 <hr class="rule">
             </div>
 
-            <div class="row text-center">
-                <h2></h2>
-                <p></p>
+            <div class="row text-right">
+                <button class="page-button">
+                    <a class="links" href="sprint3-cultural.html">SKIP TO SPRINT THREE CORE BLOG</a>
+                </button>
+            </div>
+
+            <div class="row">
+                <h2 class="text-center">Technical Blog</h2>
+                <p class="text-center">
+                    1. <u>Use an analogy to describe the differences between HTML and CSS</u>
+                </p>
+                <p class="text-center">
+                    If we think of a website as being a house.  A house has rooms, and each room contains furniture and appliances. Similarly, a webpage has sections (e.g. header, body, footer), and each section contains images and text.  HyperText Markup Language (HTML) specifies how content is structured on the page, and organises and presents this content in a structured hierarchy of elements. If we apply the house analogy to this hierarchy, we could say that <code class="code-font">HOUSE</code> is the parent element of <code class="code-font">LIVING_ROOM</code> is the parent element of <code class="code-font">COUCH</code> and <code class="code-font">RUG</code>, which are sibling elements.
+                </p>
+                <p class="text-center">
+                    However, not all rooms, couches, and rugs look the same, nor do words or images on a page. That’s where CSS (Cascading Style Sheets) comes in – CSS is a set of styling instructions which define how elements look on the page. It describes their color, font, size, position, shape, and more. So using CSS we are able to change the colour and fabric of the couch and the size and texture of the rug and decide where in the room to place them both.
+                </p>
+
+                <p class="next-question text-center">
+                    2. <u>Explain control flow and loops using an example process from everyday life.</u>
+                </p>
+                <p class="text-center">
+                    Control flow is the order in which statements or functions are executed. In JavaScript, we read the code starting from the first line until the last line, unless in the code there is some statement that changes that control flow (such as a loop).  We can think of control flow like a recipe for baking cupcakes. We start at the top and follow the instructions until we get to the bottom of the recipe.
+                </p>
+                <p class="text-center">
+                    Loops in JavaScript are used to execute the same block of code a given number of times, or while a specified condition is true. They are handy if you want to run the same code over and over again. Now, say we wanted to ice all of our cupcakes.  Instead of having to say:
+                </p>
+                <p>
+                    <ol>
+                        <li>Spread a spoonful of icing on to a cupcake</li>
+                        <li>Spread a spoonful of icing on to the next cupcake</li>
+                        <li>Spread a spoonful of icing on to the next cupcake</li>
+                        <li>Spread a spoonful of icing on to the next cupcake</li>
+                        <li>Spread a spoonful of icing on to the next cupcake</li>
+                        <li>Spread a spoonful of icing on to the next cupcake</li>
+                        <li>Spread a spoonful of icing on to the next cupcake</li>
+                        <li>Spread a spoonful of icing on to the next cupcake</li>
+                        <li>Spread a spoonful of icing on to the next cupcake...</li>
+                    </ol>
+                </p>
+                <p class="text-center">
+                    We can write a loop that says: starting with the first cupcake and continuing for as many cupcakes as there are, take a spoonful of icing and spread it on top. Then move to the next cupcake.  When you run out of cupcakes, stop.  This is much more efficient, saves time and is easier to adjust if we want to change the process! 
+                </p>
+                <p class="next-question text-center">
+                    3. <u>Describe what the DOM is and an example of how you might interact with it.</u>
+                </p>
+                <p class="text-center">
+                    Every page that we view in our browser is a document.  The Document Object Model (DOM) is a tree-like structure, a sort of map, made up of all the elements that exist in the HTML document. In the DOM, every HTML-tag is an object, all of these objects are called ‘nodes’ and all of these nodes are accessible using JavaScript.
+                </p>
+                <p class="text-center">
+                    Elements in the DOM are arranged in a hierarchy that defines what you eventually see in the browser.  We can think of it like a family tree.  In the example below, [div] and [script] are children of the [body] element.  Because they share the same parent, this makes them siblings.  This hierarchy is used to help organise the HTML elements. It is also used to help CSS rules make sense of which styles to apply to certain elements.
+                </p>
+                <p class="text-center">
+                    <img class="code-screenshot" src="../images/DOM-Tree.png" width=450 alt="The DOM Tree"/>
+                </p>
+                <p class="text-center">
+                    Whether we are using JavaScript to change an element's text, swap out an image with a different one, move an element from one part of your document to another, set an inline style, or perform any other change we want to make, we will be modifying the DOM. 
+                </p>
+
+                
+                <p class="next-question text-center">
+                    4. <u>Explain the difference between accessing data from arrays and objects.</u>
+                </p>
+                <p class="text-center">
+                        Think of an array as a list of similar items, for example animals.  We can select items in this array by their index - indexes start at zero.  So for an array where <code class="code-font">animals = [cat, dog, bird]</code>:
+                </p>    
+                <p>
+                    <ul id="animals">
+                        <li><code class="code-font">animals[0] = cat</code></li>
+                        <li><code class="code-font">animals[1] = dog</code></li>
+                        <li><code class="code-font">animals[2] = bird</code></li>
+                    </ul>
+                </p>
+                <p class="text-center">
+                    Typically for arrays we use bracket notation.
+                </p>
+                <p class="text-center">
+                    An object is similar to an array but each object has a set of properties.  So for the <code class="code-font">cat</code> object we might have:
+                </p>
+                <p>
+                    <ul id="properties">
+                        <li><code class="code-font">colour: “ginger”</code></li>
+                        <li><code class="code-font">legs: 4</code></li>
+                        <li><code class="code-font">tail: true</code></li>
+                        <li><code class="code-font">eye colour: “green”</code></li>
+                    </ul>
+                </p>
+                <p class="text-center">
+                    Instead of selecting a value by index, we use a key, for example; <code class="code-font">cat.colour = ginger</code> and <code class="code-font">cat.legs = 4</code>
+                </p>
+                <p>
+                    Typically for objects we use dot notation, however there are some limitations.  Dot notation will work only when the property name is alphanumeric (<code class="code-font">_</code> and <code class="code-font">$</code> are allowed), does not start with a number, and does not contain any spaces.  In these circumstances, we resort to using bracket notation.  For example, <code class="code-font">cat[“eye colour”] = green</code>.
+                </p>
+
+                <p class="next-question text-center">
+                    5. <u>Explain what functions are and why they are useful.</u>
+                </p>
+                <p class="text-center">
+                    A function is a block of code designed to perform a particular task.  It is reusable code which can be called anywhere in our program.  This makes our lives much easier as it eliminates the need for writing the same code again and again.  A function can take one or more parameters and use these to complete a function.  Using functions increases our efficiency when building an application and also makes our code more readable. See the picture below for a useful demonstration!
+                </p>
+                <p class="text-center">
+                    <img class="code-screenshot" src="../images/sandwich.png" width=500 alt="Sandwich Demo of a function"/>
+                </p>
+            </div>
+
+            <div class="row text-center back-to-top">
+                    <button>
+                        <a class="links" href="#top">BACK TO TOP</a>
+                    </button>
             </div>
 
             <div class="row">
@@ -47,7 +155,7 @@
                     <a href="../blog/sprint1-cultural.html">
                         <figure class="icon">
                             <img class="img-responsive" src="../images/Sprint-1.png" alt="Sprint 1" />
-                            <figcaption class="caption">Sprint One</figcaption>
+                            <figcaption class="caption">SPRINT ONE</figcaption>
                         </figure>
                     </a>
                 </div>
@@ -55,7 +163,7 @@
                      <a href="../blog/sprint2-technical.html">
                         <figure class="icon">
                             <img class="img-responsive" src="../images/Sprint-2.png" alt="Sprint 2" />
-                            <figcaption class="caption">Sprint Two</figcaption>
+                            <figcaption class="caption">SPRINT TWO</figcaption>
                         </figure>
                     </a>    
                 </div>
@@ -63,7 +171,7 @@
                     <a href="../blog/sprint3-technical.html">
                         <figure class="icon">
                             <img class="img-responsive" src="../images/Sprint-3.png" alt="Sprint 3" />
-                            <figcaption class="caption">Sprint Three</figcaption>
+                            <figcaption class="caption">SPRINT THREE</figcaption>
                         </figure>
                     </a>
                 </div>
@@ -71,7 +179,7 @@
                     <a href="../blog/sprint4-technical.html">
                         <figure class="icon">
                             <img class="img-responsive" src="../images/Sprint-4.png" alt="Sprint 4" />
-                            <figcaption class="caption">Sprint Four</figcaption>
+                            <figcaption class="caption">SPRINT FOUR</figcaption>
                         </figure>
                     </a>
                 </div>
@@ -79,7 +187,7 @@
                     <a href="../blog/sprint5-technical.html">
                         <figure class="icon">
                             <img class="img-responsive" src="../images/Sprint-5.png" alt="Sprint 5" />
-                            <figcaption class="caption">Sprint Five</figcaption>
+                            <figcaption class="caption">SPRINT FIVE</figcaption>
                         </figure>
                     </a>
                 </div>

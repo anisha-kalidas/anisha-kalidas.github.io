@@ -7,6 +7,7 @@ body {
     height: 2px;
     border: none;
     background-color: #333333a1;
+    margin-top: 40px;
 }
 
 .bottom-rule {
@@ -45,8 +46,8 @@ body {
 
 .caption {
     color: #333333;
-    font-size: 30px;
-    font-weight: 800;
+    font-size: 25px;
+    font-weight: 200;
 }
 
 .home-logo {
@@ -96,7 +97,7 @@ p {
     background-color: #b3acac69;
     padding-left: 4px;
     padding-right: 4px;
-    font-size: 70%;
+    font-size: 85%;
     font-weight: 300;
 }
 
@@ -114,9 +115,18 @@ ul {
     font-size: 25px;
     margin: 30px;
     font-weight: 200;
-    list-style-position: inside;
-    text-indent: 20%
-    ;
+    margin-left: 250px
+}
+
+ol {
+    font-size: 25px;
+    margin: 30px;   
+    font-weight: 200;
+    margin-left: 300px;
+}
+
+li {
+    padding-left: 23px;
 }
 
 #fixed-cat {
@@ -169,4 +179,14 @@ ul {
 
 .page-bottom {
     margin-bottom: 80px;
+}
+
+#animals {
+    margin-left: 400px;
+    list-style-type: none;
+}
+
+#properties {
+    margin-left: 400px;
+    list-style-type: none;
 }
