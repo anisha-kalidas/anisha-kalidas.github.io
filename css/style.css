@@ -63,13 +63,20 @@ h2 {
     font-size: 50px;
     font-weight: 400;
     line-height: 120px;
+    margin-left: 60px;
 }
 
 h3 {
     font-size: 35px;
     font-weight: 300;
-    line-height: 170px;
-    margin-left: 70px;
+    line-height: 150px;
+    margin-left: 60px;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: 300px;
+    margin-left: 60px;
 }
 
 p {
@@ -127,11 +134,18 @@ ul {
     margin-left: 440px;
 }
 
-ol {
+#cupcakes {
     font-size: 25px;
     margin: 30px;   
     font-weight: 200;
     margin-left: 300px;
+}
+
+#ducky {
+    font-size: 23px; 
+    font-weight: 200;
+    margin-left: 60px;
+    line-height: 40px;
 }
 
 li {
@@ -206,4 +220,10 @@ button {
     border: solid #333333;
     border-width: thin; 
     padding: 10px;
+}
+
+.anecdotes {
+    margin-top: 50px;
+    margin-left: 95px;
+    text-decoration: underline;
 }
