@@ -142,6 +142,13 @@ ul {
     margin-left: 300px;
 }
 
+#reflections {
+    font-size: 25px;
+    margin: 30px;
+    font-weight: 200;
+    margin-left: 100px;
+}
+
 #ducky {
     font-size: 23px; 
     font-weight: 200;
